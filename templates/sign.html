@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Study Spaces - Submission</h2>
+    <form action="{{ url_for('sign') }}" method=post>
+    	<p class="heading">Name: <input type=text name=name></p>
+    	<p class="heading">Code: <input type=text name=code></p>
+        <p class="heading">Floor:<input type=number name=floor></p>
+        <p class="heading">Room:<input type=number name=room></p>
+        <p class="heading">Rating:<input type=number name=rating></p>
+        <p><input type=submit value=Submit></p>
+    </form>
+{% endblock %}
